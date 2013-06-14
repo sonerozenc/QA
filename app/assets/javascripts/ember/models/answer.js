@@ -2,8 +2,8 @@
 //-             ANSWER MODEL               -//
 //------------------------------------------//
 
-Qa.Answers = DS.Model.extend({
+Qa.Answer = DS.Model.extend({
   answerline:         DS.attr('string'),
-  vote:               DS.attr('integer'),
+  vote:               DS.attr('number'),
   question:           DS.belongsTo('Qa.Question')
 });

@@ -24,7 +24,7 @@
     <div class="row">
       <div class="large-6 columns">
         {{#each question in model}}
-          <h3>{{question.questionline}}</h3>
+          <h3>{{#linkTo questions.show question }}{{question.questionline}}{{/linkTo}}</h3>
         {{/each}}
       </div>
     <div class="large-6 columns">
@@ -37,16 +37,15 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>
-      <!--question title -->
+        {{model.questionline}}
       </h3>
     </div>
   </div>
   <div class="row">
     <div class="large-6 small-12 columns">
-      <p><!-- One answer --></p>
-    </div>
-    <div class="large-6 small-12 columns">
-      <p><!-- The other answer --></p>
+      {{#each answer in model.answers}}
+        <p>{{answer.answerline}}</p>
+      {{/each}}
     </div>
   </div>
 </script>

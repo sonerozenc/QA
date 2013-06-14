@@ -5,8 +5,8 @@
 
 Qa.Router.map(function() {
   this.resource       ('questions',  { path: 'questions' },        function() {
-    this.route        ('new',        { path: 'questions/new' });
-    this.route        ('show',       { path: 'questions/:questions_id'});
+    this.route        ('new',        { path: 'new' });
+    this.route        ('show',       { path: ':question_id'});
   });
 });
 
