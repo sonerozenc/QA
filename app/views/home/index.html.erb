@@ -1,38 +1,62 @@
-<script type="text/x-handlebars">
+  
+<!-- Main Nav Bar and outlet -->
+  <script type="text/x-handlebars">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1>{{#linkTo index}}QA{{/linkTo}}</h1>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li> <a href="/#/question/new">Add an Question</a></li>
+        </ul>
+      </section>
+    </nav>
+    {{outlet}}
+  </script>
+
+<!-- List of questions -->
+<script type="text/x-handlebars" id="questions">
+  <h2>Question of the day</h2>
+    <div class="row">
+      <div class="large-6 columns">
+        {{#each question in model}}
+          <h3>{{question.questionline}}</h3>
+        {{/each}}
+      </div>
+    <div class="large-6 columns">
+      {{outlet}}
+    </div>
+  </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="questions/show">
   <div class="row">
     <div class="large-12 columns">
-      <h1>Qa</h1>
-      {{outlet}}
+      <h3>
+      <!--question title -->
+      </h3>
     </div>
   </div>
-</script>
-
-<script type="text/x-handlebars" data-template-name="users">
-  <div style="float:right">{{#linkTo users.new}}Add a User{{/linkTo}}</div>
-  <h2>Users</h2>
   <div class="row">
-    <div class="large-6 columns">
-      {{#each user in model}}
-        <p>
-          {{#linkTo users.show user}}{{user.name}}{{/linkTo}}
-          [ {{#linkTo users.edit user}}edit{{/linkTo}} ]
-        </p>
-      {{/each}}
+    <div class="large-6 small-12 columns">
+      <p><!-- One answer --></p>
     </div>
-    <div class="large-6 columns">
-      {{outlet}}
+    <div class="large-6 small-12 columns">
+      <p><!-- The other answer --></p>
     </div>
   </div>
 </script>
 
-<script type="text/x-handlebars" data-template-name="users/new">
-  <p>Add a User</p>
-</script>
-
-<script type="text/x-handlebars" data-template-name="users/show">
-  <p>Show: {{name}}</p>
-</script>
-
-<script type="text/x-handlebars" data-template-name="users/edit">
-  <p>Edit: {{name}}</p>
+<script type="text/x-handlebars" data-template-name="questions/new">
+  <h2>Add a new Question</h2>
+    <form>
+      <p>{{view Ember.TextField valueBinding="name" placeholder="Your Name"}}</p>
+      <p>{{view Ember.TextField valueBinding="email" placeholder="Email Address"}}</p>
+      <p>{{view Ember.TextArea valueBinding="question" placeholder="What"}}</p>
+        <p><button {{action save}} type="submit" class="button small radius">Post Your Question</button></p>
+    </form>
 </script>
