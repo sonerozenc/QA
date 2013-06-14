@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(:version => 20130614105832) do
 
   create_table "answers", :force => true do |t|
-    t.string   "answerline"
+    t.string   "answer1"
+    t.string   "answer2"
     t.integer  "vote"
     t.integer  "question_id"
     t.datetime "created_at",  :null => false

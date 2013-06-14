@@ -1394,3 +1394,372 @@ Processing by AnswersController#index as JSON
   [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" 
   Rendered answers/index.json.rabl (1.7ms)
 Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 14:17:20 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/foundation.css?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /vendor/foundation.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vendor/handlebars-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /vendor/handlebars-1.0.0-rc.4.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vendor/ember-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /vendor/ember-1.0.0-rc.4.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vendor/ember-data.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /vendor/ember-data.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ember/app.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /ember/app.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ember/router.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /ember/router.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ember/models/store.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /ember/models/store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ember/models/answer.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /ember/models/answer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ember/models/question.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /ember/models/question.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 14:17:21 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (72.9ms)
+Completed 200 OK in 122ms (Views: 76.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/foundation.css?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /vendor/foundation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/handlebars-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /vendor/handlebars-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /vendor/ember-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-data.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /vendor/ember-data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/app.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /ember/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/router.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /ember/router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/store.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /ember/models/store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/answer.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /ember/models/answer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/question.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /ember/models/question.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 14:18:42 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 14:18:43 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (4.8ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Compiled ember/models/answer.js  (0ms)  (pid 25574)
+Compiled ember/app.js  (29ms)  (pid 25574)
+Compiled application.js  (9ms)  (pid 25574)
+Completed 200 OK in 137ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/foundation.css?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /vendor/foundation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/handlebars-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /vendor/handlebars-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /vendor/ember-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-data.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /vendor/ember-data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/app.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /ember/app.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ember/router.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /ember/router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/store.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /ember/models/store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/answer.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /ember/models/answer.js - 200 OK (2ms)
+
+
+Started GET "/assets/ember/models/question.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /ember/models/question.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:31 +0100
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 14:59:32 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (23.5ms)
+Completed 200 OK in 70ms (Views: 26.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/foundation.css?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /vendor/foundation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/handlebars-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /vendor/handlebars-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /vendor/ember-1.0.0-rc.4.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-data.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /vendor/ember-data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/app.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /ember/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/router.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /ember/router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/store.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /ember/models/store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/answer.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /ember/models/answer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ember/models/question.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /ember/models/question.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 14:59:38 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (4.5ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 14:59:42 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (5.0ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/questions/1" for 127.0.0.1 at 2013-06-14 14:59:53 +0100
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  Rendered questions/show.json.rabl (2.0ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/questions/1" for 127.0.0.1 at 2013-06-14 14:59:54 +0100
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  Rendered questions/show.json.rabl (1.9ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (25.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateQuestions (20130614105721)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "questionline" varchar(255), "answer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_questions_on_answer_id" ON "questions" ("answer_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130614105721')
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAnswers (20130614105832)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "answer1" varchar(255), "answer2" varchar(255), "vote" integer, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130614105832')[0m
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (48.3ms)[0m  [1mINSERT INTO "questions" ("answer_id", "created_at", "email", "name", "questionline", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer_id", nil], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["email", "toby.sims@gmail.com"], ["name", "Toby"], ["questionline", "What shall I wear tonight?"], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("answer_id", "created_at", "email", "name", "questionline", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["answer_id", nil], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["email", "sonerozenc@gmail.com"], ["name", "Soner"], ["questionline", "What shall I eat tonight?"], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("answer_id", "created_at", "email", "name", "questionline", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer_id", nil], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["email", "kim.szelong@gmail.com"], ["name", "Kim"], ["questionline", "What movie shall I see tonight?"], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "answers" ("answer1", "answer2", "created_at", "question_id", "updated_at", "vote") VALUES (?, ?, ?, ?, ?, ?)  [["answer1", "Black dress"], ["answer2", "Green dress"], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["question_id", 1], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["vote", 0]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answers" ("answer1", "answer2", "created_at", "question_id", "updated_at", "vote") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer1", "Hawksmoor"], ["answer2", "Dishoom"], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["question_id", 2], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["vote", 0]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("answer1", "answer2", "created_at", "question_id", "updated_at", "vote") VALUES (?, ?, ?, ?, ?, ?)  [["answer1", "Star Trek"], ["answer2", "Man of Steel"], ["created_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["question_id", 3], ["updated_at", Fri, 14 Jun 2013 14:00:28 UTC +00:00], ["vote", 0]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/api/questions/1" for 127.0.0.1 at 2013-06-14 15:00:38 +0100
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  Rendered questions/show.json.rabl (118.1ms)
+Completed 200 OK in 195ms (Views: 132.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/questions" for 127.0.0.1 at 2013-06-14 15:00:47 +0100
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 2[0m
+  [1m[35m (0.1ms)[0m  SELECT "answers".id FROM "answers" WHERE "answers"."question_id" = 3
+  Rendered questions/index.json.rabl (4.6ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/answers" for 127.0.0.1 at 2013-06-14 15:00:55 +0100
+Processing by AnswersController#index as JSON
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+  Rendered answers/index.json.rabl (2.9ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
