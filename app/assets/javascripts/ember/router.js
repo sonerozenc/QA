@@ -1,29 +1,53 @@
+//------------------------------------------//
+//-                 ROUTES                 -//
+//------------------------------------------//
+
+
 Qa.Router.map(function() {
-  this.resource('users', function() {
-    this.route('new');
-    this.route('show', { path: ':user_id' });
-    this.route('edit', { path: ':user_id/edit' });
+  this.resource       ('questions',  { path: 'questions' },        function() {
+    this.route        ('new',        { path: 'questions/new' });
+    this.route        ('show',       { path: 'questions/:questions_id'});
   });
 });
 
-Qa.Router.reopen({
-  location: 'history'
+//------------------------------------------//
+//-              INDEX ROUTE               -//
+//------------------------------------------//
+
+Qa.IndexRoute = Ember.Route.extend({
+  redirect: function() {
+    this.transitionTo('questions');
+  }
 });
 
-Qa.UsersRoute = Ember.Route.extend({
+
+//------------------------------------------//
+//-            QUESTIONS ROUTE             -//
+//------------------------------------------//
+
+Qa.QuestionsRoute = Ember.Route.extend({
   model: function() {
-    return Qa.User.find();
+    return Qa.Question.find();
   }
 });
 
-Qa.UsersShowRoute = Ember.Route.extend({
+
+//------------------------------------------//
+//-            QUESTION ROUTE             -//
+//------------------------------------------//
+
+Qa.QustionsShowRoute = Ember.Route.extend({
   model: function(params) {
-    return Qa.User.find(params.user_id);
+    return Qa.Question.find(params.questions_id);
   }
 });
 
-Qa.UsersEditRoute = Ember.Route.extend({
-  model: function(params) {
-    return Qa.User.find(params.user_id);
+//------------------------------------------//
+//-           LIBRARY NEW ROUTE            -//
+//------------------------------------------//
+
+Qa.QuestionsNewRoute = Ember.Route.extend({
+  model: function() {
+    return Qa.Question.createRecord();
   }
 });
