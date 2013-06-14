@@ -1,0 +1,67 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-14 12:40:40 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Compiled vendor/foundation.css  (0ms)  (pid 11664)
+Compiled application.css  (27ms)  (pid 11664)
+Compiled jquery.js  (37ms)  (pid 11664)
+Compiled jquery_ujs.js  (0ms)  (pid 11664)
+Compiled vendor/handlebars-1.0.0-rc.4.js  (35ms)  (pid 11664)
+Compiled vendor/ember-1.0.0-rc.4.js  (19ms)  (pid 11664)
+Compiled vendor/ember-data.js  (5ms)  (pid 11664)
+Compiled ember/router.js  (0ms)  (pid 11664)
+Compiled ember/models/store.js  (0ms)  (pid 11664)
+Compiled ember/models/user.js  (0ms)  (pid 11664)
+Compiled ember/app.js  (139ms)  (pid 11664)
+Compiled application.js  (471ms)  (pid 11664)
+Completed 200 OK in 698ms (Views: 697.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/foundation.css?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /vendor/foundation.css - 200 OK (4ms)
+
+
+Started GET "/assets/vendor/handlebars-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /vendor/handlebars-1.0.0-rc.4.js - 200 OK (3ms)
+
+
+Started GET "/assets/vendor/ember-1.0.0-rc.4.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /vendor/ember-1.0.0-rc.4.js - 200 OK (4ms)
+
+
+Started GET "/assets/vendor/ember-data.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /vendor/ember-data.js - 200 OK (2ms)
+
+
+Started GET "/assets/ember/app.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /ember/app.js - 200 OK (6ms)
+
+
+Started GET "/assets/ember/router.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /ember/router.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/ember/models/store.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /ember/models/store.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /application.js - 200 OK (54ms)
+
+
+Started GET "/assets/ember/models/user.js?body=1" for 127.0.0.1 at 2013-06-14 12:40:41 +0100
+Served asset /ember/models/user.js - 200 OK (2ms)
