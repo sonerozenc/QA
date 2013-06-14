@@ -9,16 +9,13 @@
 Question.destroy_all
 
 questions = Question.create([
-  {name: "Toby", email: "toby.sims@gmail.com", questionline: "Im question 1"},
-  {name: "Soner", email: "sonerozenc@gmail.com", questionline: "Im question 2"},
-  {name: "Kim", email: "kim.szelong@gmail.com", questionline: "Im question 3"}
+  {name: "Toby", email: "toby.sims@gmail.com", questionline: "What shall I wear tonight?"},
+  {name: "Soner", email: "sonerozenc@gmail.com", questionline: "What shall I eat tonight?"},
+  {name: "Kim", email: "kim.szelong@gmail.com", questionline: "What movie shall I see tonight?"}
 ]);
 
 answers = Answer.create([
-  {answerline: "im an answer for q 1", vote: 0, question: questions[0]},
-  {answerline: "im an answer for q 1", vote: 0, question: questions[0]},
-  {answerline: "im an answer for q 2", vote: 0, question: questions[1]},
-  {answerline: "im an answer for q 2", vote: 0, question: questions[1]},
-  {answerline: "im an answer for q 3", vote: 0, question: questions[2]},
-  {answerline: "im an answer for q 3", vote: 0, question: questions[2]},
+  {answer1: "Black dress", answer2: "Green dress", vote: 0, question: questions[0]},
+  {answer1: "Hawksmoor", answer2: "Dishoom", vote: 0, question: questions[1]},
+  {answer1: "Star Trek", answer2: "Man of Steel", vote: 0, question: questions[2]},
 ]);

@@ -1,6 +1,7 @@
 object @answer
 
 attributes  :id, 
-            :answerline, 
+            :answer1, 
+            :answer2, 
             :vote,
             :question_id
