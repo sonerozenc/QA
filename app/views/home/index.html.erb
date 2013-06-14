@@ -1,0 +1,38 @@
+<script type="text/x-handlebars">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Qa</h1>
+      {{outlet}}
+    </div>
+  </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="users">
+  <div style="float:right">{{#linkTo users.new}}Add a User{{/linkTo}}</div>
+  <h2>Users</h2>
+  <div class="row">
+    <div class="large-6 columns">
+      {{#each user in model}}
+        <p>
+          {{#linkTo users.show user}}{{user.name}}{{/linkTo}}
+          [ {{#linkTo users.edit user}}edit{{/linkTo}} ]
+        </p>
+      {{/each}}
+    </div>
+    <div class="large-6 columns">
+      {{outlet}}
+    </div>
+  </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="users/new">
+  <p>Add a User</p>
+</script>
+
+<script type="text/x-handlebars" data-template-name="users/show">
+  <p>Show: {{name}}</p>
+</script>
+
+<script type="text/x-handlebars" data-template-name="users/edit">
+  <p>Edit: {{name}}</p>
+</script>
