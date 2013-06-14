@@ -1,63 +1,56 @@
 class QuestionsController < ApplicationController
+  respond_to :json
+
+  def index
+    @questions = Question.all
+  end
+
+
+  def show
+    @question = Question.find(params[:id])
+
+    unless @question
+      head :not_found
+    end
+  end
+
+
+  def new
+    @question = Question.new
+  end
+
+
   def create
     @question = Question.new(params[:question])
 
-     respond_to do |format|
-      if @question.save
-        format.html { redirect_to @question, notice: 'Question was successfully created.' }
-        format.json { render json: @question, status: :created, location: @question }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @question.errors, status: :unprocessable_entity }
-      end
+    if @question.save
+      render :show, status: :created
+    else
+      head :not_found
     end
   end
+
 
   def update
     @question = Question.find(params[:id])
-    @questions = Question.all
 
-    respond_to do |format|
-      if @question.update_attributes(params[:question])
-        format.html { redirect_to @question, notice: 'Question was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @question.errors, status: :unprocessable_entity }
-      end
+    head :not_found unless @question
+
+    if @question.update_attributes params[:question]
+      # Status no_content to compensate for ember bug
+      render :show, status: :no_content
+    else
+      render :errors, status: :unprocessable_entity
     end
   end
 
-  def edit
-    @question = Question.find(params[:id])
-    @questions = Question.all
-  end
 
   def destroy
     @question = Question.find(params[:id])
     @question.destroy
 
-    respond_to do |format|
-      format.html { redirect_to questions_url }
-      format.json { head :no_content }
-    end
+    head :no_content
   end
 
-  def index
-    @questions = Question.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @questions }
-    end
-  end
-
-  def show
-    @question = Question.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @question }
-    end
-  end
 end
